@@ -1,2 +1,4 @@
-- include: apt.yml
-- include: usual-packages.yml
+---
+- hosts: servers
+  roles:
+    - ubuntu-server

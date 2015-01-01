@@ -16,7 +16,10 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision :ansible do |ansible|
     ansible.playbook = "etc/provisioning/setup.yml"
-    ansible.inventory_path = "etc/provisioning/hosts"
+    ansible.groups = {
+      "vagrant" => ["default"],
+      "servers:children" => ["vagrant"]
+    }
     ansible.verbose = true
     ansible.limit = 'all'
   end
