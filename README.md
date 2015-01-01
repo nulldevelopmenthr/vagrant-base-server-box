@@ -47,4 +47,4 @@ vagrant box remove "trusty32-$(date +'%Y%m%d')"
 =====
 ###List of already generated boxes:
 
-2014-10-24 -> http://dwnl.nulldevelopment.hr/boxes/trusty32-20141024.box
+2014-10-24 -> http://dwnl.nulldevelopment.hr/boxes/trusty32-20150101.box
