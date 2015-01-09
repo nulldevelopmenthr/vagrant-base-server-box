@@ -3,9 +3,9 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/trusty32"
-    
+
   config.vm.network "private_network", ip: "10.1.0.10"
-     
+
   config.vm.provider "virtualbox" do |v|
     v.name ="base-server-box"
     v.customize ["modifyvm", :id, "--memory", 1024]
